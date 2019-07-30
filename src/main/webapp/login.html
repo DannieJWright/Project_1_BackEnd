@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form_modals -->
+
+		<meta charset="ISO-8859-1">
+		<title>Employee Login</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+		        crossorigin="anonymous">
+	
+		<style>
+			#signInBox {
+				background-color: #f1f1f1ab;
+				border: thin solid cornflowerblue;
+				border-radius: 10px;
+				margin-top: 5%;
+				margin-bottom: 0%;
+			}
+
+			.input {
+				padding: 10px;
+				margin-bottom: 5%;
+				width: 100%;
+			}
+
+
+			#submitBtn {
+				margin-top: 5%;
+                margin-bottom: 0%;
+				text-align: center; 
+				border-radius: 5px;
+                height: 50px;
+				font-weight: bold;
+			}
+
+		</style>
+	</head>
+	
+	
+	<body style="background-color:darkcyan">
+
+        <div class="container-fluid" >
+            <div class="row">
+
+
+                <!-- Overall box -->
+                <div id="signInBox" class="col-sm-3 container" style="padding:2%">
+                    
+                    <!-- Login suggesting -->
+                    <div class="row">
+                        <h1 class="col-sm-12" style="text-align: center; text-decoration: underline; margin-bottom: 10%">Login:</h1>
+                    </div>
+
+                    <form class="container" action="account/home">
+                        <!-- Name -->
+                        <div class="row" >
+                            <input type="text" class="input col-sm-12" placeholder="Username">
+                        </div>
+                        
+                        <!-- Password -->
+                        <div class="row">
+                            <input type="password" class="input col-sm-12" placeholder="Password">
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="row">
+                            <div class="col-sm-4"></div>
+                            <input id="submitBtn" class="col-sm-4 btn-success" type="submit" value="Sign In" >
+                            <div class="col-sm-4"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
+
